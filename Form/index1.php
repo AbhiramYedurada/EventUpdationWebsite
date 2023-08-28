@@ -7,6 +7,7 @@
   {
       header ("Location: login.php");
   } 
+
   $qry = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = '{$unique_id}'");
   if(mysqli_num_rows($qry) > 0){
     $row = mysqli_fetch_assoc($qry);
